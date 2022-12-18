@@ -27,4 +27,8 @@ public class TC01 {
     public void TC01BeforeClass(){
         System.out.println("this is TC01 before Class");
     }
+
+    public void testEmpid(){
+        System.out.println();
+    }
 }

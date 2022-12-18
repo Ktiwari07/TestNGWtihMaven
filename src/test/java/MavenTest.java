@@ -5,7 +5,8 @@ import org.testng.annotations.*;
 public class MavenTest {
 
     @Test
-    public void start(){
+    public void start()
+    {
         System.out.println("this is start");
     }
     @Test
