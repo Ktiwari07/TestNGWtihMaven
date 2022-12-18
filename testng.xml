@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="4">
+
+    <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+
+    <test verbose="2" preserve-order="true" enabled="false"  
+          name="C:ipl17/Users/ts95/IdeaProjects/TestNGMaven/src/main/java/com/sdet/SeleniumTest.java">
+        
+        <groups>
+            <run>
+                <include name="Regression"/>
+                <exclude name="Sanity"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sdet.SeleniumTest">
+
+                <methods>
+                    
+                    <include name="login_test"/>
+                    <include name="setup"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
